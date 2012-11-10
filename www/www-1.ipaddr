@@ -1,0 +1,24 @@
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 16436 qdisc noqueue state UNKNOWN 
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+    inet 10.250.14.101/32 scope global lo:0
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth6: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN qlen 1000
+    link/ether 00:e0:4c:4b:a0:a2 brd ff:ff:ff:ff:ff:ff
+3: eth5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 1000
+    link/ether 00:24:81:1a:e1:72 brd ff:ff:ff:ff:ff:ff
+    inet 10.41.18.20/16 brd 10.41.255.255 scope global eth5
+    inet 10.250.14.120/24 brd 10.250.14.255 scope global eth5:0
+    inet6 fe80::224:81ff:fe1a:e172/64 scope link 
+       valid_lft forever preferred_lft forever
+4: vmnet1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN qlen 1000
+    link/ether 00:50:56:c0:00:01 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.138.1/24 brd 192.168.138.255 scope global vmnet1
+    inet6 fe80::250:56ff:fec0:1/64 scope link 
+       valid_lft forever preferred_lft forever
+5: vmnet8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN qlen 1000
+    link/ether 00:50:56:c0:00:08 brd ff:ff:ff:ff:ff:ff
+    inet 172.16.34.1/24 brd 172.16.34.255 scope global vmnet8
+    inet6 fe80::250:56ff:fec0:8/64 scope link 
+       valid_lft forever preferred_lft forever
