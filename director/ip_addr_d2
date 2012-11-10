@@ -1,0 +1,10 @@
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 16436 qdisc noqueue state UNKNOWN
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+2: eth8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 100
+    link/ether 00:24:81:1a:dd:89 brd ff:ff:ff:ff:ff:ff
+    inet 10.41.18.23/16 brd 10.41.255.255 scope global eth8
+    inet 10.250.14.111/24 brd 10.250.14.255 scope global eth8:0
+    inet 10.250.14.102/24 brd 10.250.14.255 scope global secondary eth8:2
+    inet 10.250.14.103/24 brd 10.250.14.255 scope global secondary eth8:3
+
