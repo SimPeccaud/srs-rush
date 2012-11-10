@@ -1,0 +1,7 @@
+mysql> show master status\G;
+*************************** 1. row ***************************
+            File: mysql-bin.000014
+        Position: 3802
+    Binlog_Do_DB: store
+Binlog_Ignore_DB: 
+1 row in set (0.00 sec)
