@@ -6,9 +6,9 @@ mysql> show slave status\G
                   Master_Port: 3306
                 Connect_Retry: 60
               Master_Log_File: mysql-bin.000014
-          Read_Master_Log_Pos: 3802
+          Read_Master_Log_Pos: 8141
                Relay_Log_File: mysqld-relay-bin.000002
-                Relay_Log_Pos: 2816
+                Relay_Log_Pos: 7155
         Relay_Master_Log_File: mysql-bin.000014
              Slave_IO_Running: Yes
             Slave_SQL_Running: Yes
@@ -21,8 +21,8 @@ mysql> show slave status\G
                    Last_Errno: 0
                    Last_Error: 
                  Skip_Counter: 0
-          Exec_Master_Log_Pos: 3802
-              Relay_Log_Space: 2973
+          Exec_Master_Log_Pos: 8141
+              Relay_Log_Space: 7312
               Until_Condition: None
                Until_Log_File: 
                 Until_Log_Pos: 0
