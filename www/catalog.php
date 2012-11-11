@@ -14,7 +14,7 @@ try {
 
 error_reporting(E_ALL | E_STRICT);
 
-$connection = mysql_connect("10.250.14.130","store_ro","");
+$connection = mysql_connect("10.250.14.102","store_ro","");
 if (!$connection)
   {
    die ("Could not connect <b>".mysql_error());  
