@@ -1,0 +1,28 @@
+Chain INPUT (policy ACCEPT 941 packets, 108K bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0           tcp dpt:22 source IP range 10.250.14.49-10.250.14.62 
+    0     0 ACCEPT     icmp --  *      *       0.0.0.0/0            10.250.14.0/24      icmp type 0 
+    0     0 ACCEPT     icmp --  *      *       0.0.0.0/0            10.250.14.0/24      icmp type 8 
+   32  5372 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0           tcp spt:3306 
+   23  5038 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0           tcp spt:443 
+   42  6684 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0           tcp dpt:443 
+   92 35767 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0           tcp spt:80 
+  246 44741 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0           tcp dpt:80 
+  430 88272 ACCEPT     all  --  lo     *       0.0.0.0/0            0.0.0.0/0           
+  139 27332 DROP       all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 DROP       all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+
+Chain OUTPUT (policy ACCEPT 447 packets, 64780 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     icmp --  *      *       10.250.14.0/24       0.0.0.0/0           icmp type 8 
+    0     0 ACCEPT     icmp --  *      *       10.250.14.0/24       0.0.0.0/0           icmp type 0 
+   40  2760 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0           tcp dpt:3306 
+   26  5231 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0           tcp spt:443 
+   40  6580 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0           tcp dpt:443 
+  158 39471 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0           tcp spt:80 
+  114 37605 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0           tcp dpt:80 
+  430 88272 ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+    0     0 ACCEPT     all  --  *      lo      0.0.0.0/0            0.0.0.0/0           
