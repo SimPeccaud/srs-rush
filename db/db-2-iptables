@@ -1,8 +1,22 @@
-Chain INPUT (policy ACCEPT 186 packets, 20442 bytes)
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
  pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:22 source IP range 10.250.14.49-10.250.14.62
+    0     0 ACCEPT     icmp --  *      *       0.0.0.0/0            10.250.14.0/24       icmptype 0
+    0     0 ACCEPT     icmp --  *      *       0.0.0.0/0            10.250.14.0/24       icmptype 8
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp spt:3306
+   50  3450 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:3306
+   85  5778 ACCEPT     all  --  lo     *       0.0.0.0/0            0.0.0.0/0           
+  613 94483 DROP       all  --  *      *       0.0.0.0/0            0.0.0.0/0           
 
 Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
  pkts bytes target     prot opt in     out     source               destination         
+    0     0 DROP       all  --  *      *       0.0.0.0/0            0.0.0.0/0           
 
-Chain OUTPUT (policy ACCEPT 29 packets, 5706 bytes)
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
  pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     icmp --  *      *       10.250.14.0/24       0.0.0.0/0            icmptype 8
+    0     0 ACCEPT     icmp --  *      *       10.250.14.0/24       0.0.0.0/0            icmptype 0
+   40  6715 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp spt:3306
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:3306
+  265 20614 ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+    0     0 ACCEPT     all  --  *      lo      0.0.0.0/0            0.0.0.0/0           
